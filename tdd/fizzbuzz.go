@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Print("Insira um número inteiro ")
+	fmt.Print("Insira um número inteiro: ")
 	var input int
 	fmt.Scanf("%d", &input)
 
@@ -17,7 +17,6 @@ func main() {
 
 func fizzbuzz(i int) string {
 	var result string
-	var istr = strconv.Itoa(i)
 	if i%3 == 0 {
 		result = "Fizz"
 	}
@@ -25,7 +24,7 @@ func fizzbuzz(i int) string {
 		result += "Buzz"
 	}
 	if result == "" {
-		result = istr
+		result = strconv.Itoa(i)
 	}
 	return result
 }
