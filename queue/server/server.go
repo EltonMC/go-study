@@ -35,19 +35,15 @@ func Connect(conn net.Conn) {
 			conn.Write([]byte(exit + "\n"))
 			break
 		case "publish":
-			//Function publish
 			exit := Publish(j.Queue, j.Message)
 			conn.Write([]byte(exit + "\n"))
 			break
 		case "consume":
-			//Function consume
 			exit := Consume(j.Queue)
 			conn.Write([]byte(exit + "\n"))
 			break
 		case "data":
-			//Function data
 		case "revoke":
-			//Function revoke
 		default:
 			conn.Write([]byte("Error" + "\n"))
 			break
