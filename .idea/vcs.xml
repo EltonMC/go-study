@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Training-Golang-and-TDD" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vimego" vcs="Git" />
   </component>
 </project>
